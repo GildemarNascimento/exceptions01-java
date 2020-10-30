@@ -13,7 +13,6 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		
-		
 		try {
 			System.out.println("Room number: ");
 			int roomNumber = sc.nextInt();
@@ -22,8 +21,6 @@ public class Program {
 			System.out.println("Check-out date (dd/mm/yyyy): ");
 			Date checkOut = sdf.parse(sc.next());
 			
-			
-		
 			Reservation reservation = new Reservation(roomNumber, checkIn, checkOut);
 			System.out.println("Reservetion " + reservation);
 			
